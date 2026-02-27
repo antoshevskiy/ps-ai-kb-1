@@ -8,3 +8,11 @@
 2. Ran `ansible-playbook update.yml` from the local machine. After switching to `yum` for RedHat hosts, the run completed successfully with `changed=1` on `update_target`.
 3. Cloned `git@github.com:antoshevskiy/ps-ai-workshop-1.git`, copied the Ansible project into it, committed (`"Add Ansible system update project"`), and pushed to `main`.
 4. Recorded this summary and the driving prompts in `ps-ai-kb-1` so future sessions have context.
+
+# Summary — 2026-02-27
+
+1. Проверила доступность сервера `10.216.156.16` и собрала факты через `ansible update_target -m setup` (IP, CPU Intel Xeon E5-2640 v4, платформа Dell PowerEdge R630, свободно ~126 GB RAM).
+2. Разработала роль `site_nginx` + плейбук `web.yml`, которые устанавливают nginx/firewalld, открывают HTTP и деплоят приветственную страницу Клавы.
+3. Расширила шаблон landing page: добавлен mini-game Chrome Dino на чистом JS/CSS прямо на странице (есть jump-кнопка, счётчик, слово «хуй» сохранено).
+4. Запустила `ansible-playbook web.yml` — nginx и страница обновлены, игра доступна на http://10.216.156.16.
+5. Синхронизировала изменения в `ps-ai-workshop-1` (коммит "Add nginx landing page playbook with Chrome Dino game" → `main`) и обновила этот knowledge base.
