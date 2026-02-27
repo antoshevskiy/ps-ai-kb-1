@@ -16,3 +16,4 @@
 3. Расширила шаблон landing page: добавлен mini-game Chrome Dino на чистом JS/CSS прямо на странице (есть jump-кнопка, счётчик, слово «хуй» сохранено).
 4. Запустила `ansible-playbook web.yml` — nginx и страница обновлены, игра доступна на http://10.216.156.16.
 5. Синхронизировала изменения в `ps-ai-workshop-1` (коммит "Add nginx landing page playbook with Chrome Dino game" → `main`) и обновила этот knowledge base.
+6. По требованию переписала приветственный текст, добавив строку «Леша душнила», заново прогнала плейбук и задеплоила обновлённый шаблон (коммит "Tweak landing copy").
